@@ -1,0 +1,35 @@
+.table {
+    padding: 0 10px;
+    border-radius: 15px;
+    background: var(--background);
+    box-shadow: 5px 5px 5px var(--shadow),
+                -5px -5px 5px var(--light);
+}
+
+.table__head {
+    display: flex;
+    color:gray;
+    padding-top: 10px;
+}
+
+.table__head > .indexator {
+    width: 20px;
+    text-align: right;
+    padding-right: 10px; /*5*/
+    margin-right: 10px;
+    margin-bottom: 10px; /* если ставлю параграф вместо спана, то появляется дефолтный маржин снизу*/
+    box-sizing: content-box;
+    /*border-bottom: 1px solid var(--foreground-highlight);*/
+}
+
+.table__head > .title {
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    /*border-bottom: 1px solid var(--foreground-highlight);*/
+}
+
+.void {
+    margin-bottom: 10px;
+    padding: 0 8px;
+}

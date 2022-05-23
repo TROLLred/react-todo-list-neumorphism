@@ -1,0 +1,57 @@
+.myForm {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background: var(--foreground-darker); /*#212121*/
+    box-shadow: 5px 5px 5px var(--shadow),
+                -5px -5px 5px var(--light); /*,
+                inset 5px 5px 10px rgba(28, 28, 28, .3),
+                inset -5px -5px 10px rgba(38, 38, 38, .3)*/
+}
+
+.myForm > input {
+    flex-grow: 1;
+    margin-right: 10px;
+    /*border-right: 1px solid var(--foreground-highlight);*/
+}
+
+.myForm > button {
+    color: var(--foreground);
+    background: var(--foreground-darker);
+    box-shadow: none;
+}
+
+.myForm > button:hover {
+    color: var(--foreground-colored);
+    box-shadow: none;
+}
+
+.myForm > button:active {
+    color: var(--foreground-colored);
+    box-shadow: none;
+}
+
+#sendBtn {
+    order: 5;
+}
+
+/*#sendBtn {
+    position: relative;
+}
+
+#sendBtn:before {
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid white;
+    background-color: var(--foreground-highlight);
+}*/
+
+.splitter {
+    height: 26px;
+    width: 1px;
+    margin: 0 10px;
+    background: var(--foreground-highlight);
+}

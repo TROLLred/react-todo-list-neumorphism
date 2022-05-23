@@ -1,0 +1,12 @@
+.myInput {
+    padding-left: 8px;
+    padding-right: 8px;
+    background: var(--foreground-darker);
+    border: none;
+    /*border-bottom: 1px solid var(--foreground-colored);*/
+    color: var(--text-color);
+}
+
+.myInput:focus {
+    outline: none;
+}

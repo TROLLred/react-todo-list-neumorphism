@@ -1,0 +1,18 @@
+.head {
+    /*border-radius: 15px 15px 0 0;
+    border: 2px solid var(--foreground-colored);*/
+}
+
+.head .title {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 200;
+    /*color: transparent;
+    -webkit-text-stroke: 1px var(--text-color);*/
+}
+
+.title span {
+    color: var(--foreground-colored);
+    font-style: italic;
+    font-weight: 200;
+}

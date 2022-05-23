@@ -1,0 +1,41 @@
+:root {
+    --background: #212121;
+    --foreground: #2f2f2f;
+    --foreground-highlight: #474747;
+    --foreground-darker: #121212;
+    --text-color: #fff;
+    --foreground-colored: #3500D3;
+    --blue-dark: #0C0032;
+    --blue-background: #190061;
+    --blue-shadow: #240090;
+    --shadow: #1c1c1c;
+    --light: #262626;
+}
+
+div, input, p, h1, span {
+    font-family: "Roboto Mono" !important;
+    font-weight: 300;
+}
+
+.App {
+    background: var(--background);
+    min-height: 100vh;
+    padding: 10px;
+    color: var(--text-color);
+}
+
+.page {
+    /*background-color: var(--foreground-colored); /*убрать цвет если не подойдет*/
+    border: 3px solid var(--background); /*убрать рамку*/
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px var(--shadow),
+                -5px -5px 5px var(--light);
+}
+
+#board {
+    border-radius: 15px;
+    background: #212121;
+    box-shadow: inset 5px 5px 5px var(--shadow),
+                inset -5px -5px 5px var(--light);
+    padding: 10px;
+}

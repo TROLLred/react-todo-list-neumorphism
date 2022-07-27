@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+## Hello, fellas
+Чё, пацаны, **НЕОМОРФИЗМ В 2022? НЕ ЖДАЛИ?** Чувствуете, да? Волна хайпа.<br/>
+Что-то появляется в медиапространстве, проходит несколько лет **и вот он Я**.<br/>
+Данное направление в дизайне почти сразу же зарекомендовало себя, как кринжовое.<br/>
+А вебдизайнерам, которые работают в данном направлении, руку пожимать не принято - потом не отмоетесь.<br/>
+Но, поскольку я настоящий панк, я захотел - я сделал.<br/>
+А теперь любуйтесь скриншотами(на GitHub Pages почему-то не работает даже build версия) данного приложения в **4K Full HD**:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Clear List](https://user-images.githubusercontent.com/30495597/170774921-27866157-1cf1-4d11-b8f0-73c7a3bbca55.png)
+*Пустой лист и отрисованный по условию компонент с призывом к действию.*
+***
+![Full List](https://user-images.githubusercontent.com/30495597/170774952-2ac6815f-db23-4e02-90a3-336aa3140926.png)
+*Заполненный лист, выполненные задачи которого перечеркнуты.*
+***
+Вышло весьма жиденько, согласен. А вы чего ожидали? Но, в принципе, мне нравится.<br/>
+Можно потыкать, подёргать, поперетаскивать элементы, посмотреть на плавные анимации, позалипать.<br/>
+Доделал бы до конца - цены бы не было.
 
-## Available Scripts
+## Библиотеки
+- [Bootstrap](https://getbootstrap.com/);
+- [React-Bootstrap](https://react-bootstrap.github.io/).
 
-In the project directory, you can run:
+## Иконки
+- [Font Awesome](https://fontawesome.com/search?s=solid%2Cbrands).
 
-### `npm start`
+## Шрифты
+- [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Чего нового попробовал
+- Drag'n'Drop
+```
+Данная фича немного подпалила сидение моего кресла, поскольку изначальный мой подход был не совсем верным.
+Я делал упор на собственную библиотеку UI компонентов и дизайн, что очень сильно меня запутало.
+Я психанул и начал делать приложение заново с 0. В итоге у меня получилось. Правда сначала я словил баг,
+который чистил под 0 весь лист, после перетаскивания элемента. Как оказалось, дело было в том, что я использовал
+метод, который мутирует исходный массив, вместо того, чтобы возвращать новый. Потому setState и давал сбой.
+В общем, работа над ошибками проведена, и теперь я понимаю, как порой тяжело без Redux,
+хоть приложение весьма небольшое.
+```
+- throw new Exception
+```
+Исходя из своего 4-летнего опыта программирования на C#, я привык делать обработку исключений.
+И здесь мне было весьма приятно применить свой опыт, для обработки получаемой строки из input
+с помощью try catch, на наличие пустой строки, слишком длинной строки и подчистки лишних пробелов
+с помощью метода trim.
+Поскольку JavaScript динамически типизированный язык, методы могут обработать и выдать любой тип данных,
+что не есть круто. Да, есть тест кейсы, но все-таки, привычнее работать с типизацией и тратить меньше времени
+на покрытие каждой строчки кода тестами. Потому я обещаю себе, что после изучения Redux, сразу же подучу TypeScript.
+```
+- Динамические классы элементов, реализованные через массив
+- Связь состояния checkbox и прилегающего к нему контента
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Пожелания на будущее
+```
+Из легенького:
+  Немного доработать размеры элементов для смартфонов;
+  Доработать дизайн, особенно украсить шапку;
+  Сделать кастомный скроллбар;
+  Сделать кастомный loader.
+Потяжелее:
+  Хотелось добавить возможность закреплять и редактировать todo, но я благополучно забил;
+  Сделать распределение задач по дням, либо папкам, заодно сделать sidebar;
+  Сделать авторизацию и подгрузку todo через API для каждого пользователя.
+```
